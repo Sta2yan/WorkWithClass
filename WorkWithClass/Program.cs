@@ -16,7 +16,7 @@ namespace WorkWithClass
 
             Player player = new Player(playerNickname, health, level);
 
-            player.ShowStatsPlayer();
+            player.ShowStats();
         }
     }
 
@@ -28,12 +28,12 @@ namespace WorkWithClass
 
         public Player(string nickname, int health, int level)
         {
-            this._nickname = nickname;
-            this._health = health;
-            this._level = level;
+            _nickname = nickname;
+            _health = health;
+            _level = level;
         }
 
-        public void ShowStatsPlayer()
+        public void ShowStats()
         {
             Console.WriteLine($"Имя - {_nickname} | Жизней - {_health} | Уровень - {_level}");
         }
